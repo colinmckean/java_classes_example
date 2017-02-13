@@ -13,5 +13,13 @@ public class BusStop{
   public void addtoQueue(Person passenger){
     busStop.add(passenger);
   }
+  public void removeFromQueue(Person passenger){
+    busStop.remove(passenger);
+  }
+
+  public void getOnBus(Person passenger, Bus bus){
+    removeFromQueue(passenger);
+    bus.add(passenger);
+  }
 
 }

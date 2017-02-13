@@ -57,5 +57,14 @@ public class BusTest{
     busStop.addtoQueue(person_1);
     assertEquals(1, busStop.numberOfPassengersAtBusStop());
   }
+  @Test
+  public void testPeopleCanMoveFromBusStopToBus(){
+    busStop.addtoQueue(person_1);
+    assertEquals(1, busStop.numberOfPassengersAtBusStop());
+    assertEquals(0, bus.numberOfPassengers());
+    busStop.getOnBus(person_1,bus);
+    assertEquals(0, busStop.numberOfPassengersAtBusStop());
+    assertEquals(1, bus.numberOfPassengers());
+  }
 
 }
