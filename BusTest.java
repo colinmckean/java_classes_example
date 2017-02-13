@@ -52,4 +52,10 @@ public class BusTest{
     assertEquals(0, busStop.numberOfPassengersAtBusStop());
   }
 
+  @Test
+  public void testCanAddToBusStopQueue(){
+    busStop.addtoQueue(person_1);
+    assertEquals(1, busStop.numberOfPassengersAtBusStop());
+  }
+
 }

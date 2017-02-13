@@ -10,4 +10,8 @@ public class BusStop{
   public int numberOfPassengersAtBusStop(){
     return busStop.size();
   }
+  public void addtoQueue(Person passenger){
+    busStop.add(passenger);
+  }
+
 }
