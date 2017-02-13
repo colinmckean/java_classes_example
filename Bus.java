@@ -16,6 +16,6 @@ public class Bus{
   passengers.add(passenger);
  }
  public boolean isFull(){
-  return numberOfPassengers() == this.busCapacity;
+  return numberOfPassengers() >= this.busCapacity;
  }
 }
