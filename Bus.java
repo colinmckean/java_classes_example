@@ -10,4 +10,7 @@ public class Bus{
  public int numberOfPassengers(){
   return passengers.size();
  }
+ public void add(Person passenger){
+  passengers.add(passenger);
+ }
 }
