@@ -22,4 +22,9 @@ public class BusTest{
     bus.add(person_1);
     assertEquals(1, bus.numberOfPassengers());
   }
+
+  @Test
+  public void testBusIsNotFull(){
+    assertEquals(false,bus.isFull());
+  }
 }
